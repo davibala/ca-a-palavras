@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Nivel1 from "../../../components/nivel1.svelte";
 </script>
 
