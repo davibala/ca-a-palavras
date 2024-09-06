@@ -13,4 +13,4 @@
 		Passo 3: Continue até encontrar todas as palavras.
 	</p>
 </div>
-<a class="menu" id="botaomenusobre" href="/">Voltar ao Menu</a>
+<a class="botao" id="botaomenusobre" href="/">Voltar ao Menu</a>

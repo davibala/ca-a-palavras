@@ -7,8 +7,8 @@
 </h1>
 
 <br />
-<a class="menu" href="/jogar">Jogar</a>
+<a class="botao" href="/jogar">Jogar</a>
 <br />
-<a class="menu" href="/Como jogar">Como jogar</a>
+<a class="botao" href="/Como jogar">Como jogar</a>
 <br />
-<a class="menu" href="/sobre">Sobre</a>
+<a class="botao" href="/sobre">Sobre</a>

@@ -15,4 +15,4 @@
     </a>
   </p>
   
-  <a class="menu" href="/">Voltar ao Menu</a>
+  <a class="botao" href="/">Voltar ao Menu</a>

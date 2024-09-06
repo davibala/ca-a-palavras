@@ -42,7 +42,7 @@
 
 <table class="menupalavra" id="nivel2">
 	<tr>
-		<td class="cell">O</td>
+		<td class="cell" >O</td>
 		<td class="cell">T</td>
 		<td class="cell">E</td>
 		<td class="cell">L</td>
@@ -160,4 +160,4 @@
 
 <br />
 
-<a class="menu" id="botaomenunivel2" href="/">Voltar ao Menu</a>
+<a class="botao" id="botaomenunivel2" href="/">Voltar ao Menu</a>
