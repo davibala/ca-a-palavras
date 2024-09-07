@@ -1,163 +1,63 @@
-<script>
+<script lang="ts">
 	import '../styles/global.css';
 	import '../styles/jogar.css';
-</script>
+	
+	function reloadPage() {
+		window.location.reload();
+	}
 
+	function geraNumAleatorio(min:number, max:number){
+		min = Math.ceil(min);
+		max = Math.floor(max+1);
+		return Math.floor(Math.random() * (max - min) + min);
+	}
+	
+	function PadraoAleatorio(): string[][] {
+   	  	let alfabeto: string[] = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+  	  	let padrao: string[][] = [];
+
+      	for (let linha: number = 0; linha < 10; linha++) {
+     		padrao[linha] = [];
+      	 	for (let coluna: number = 0; coluna < 10; coluna++) {
+            	padrao[linha][coluna] = alfabeto[geraNumAleatorio(0, 25)];
+        	}
+    	}
+
+   		return padrao;
+	}
+	let palavras:string[][] = [['lorem'],["ipsum"],["incidunt"],["aliquid"],["magni"],["fuga"],["cupiditate"]]
+	let grade:string[][] = PadraoAleatorio()
+</script>
 <h1>Encontre as Palavras!</h1>
 
-<div class="menupalavras" id="palavrasnv2">
-	<p class="tema">PAÍSES DA ÁSIA</p>
-	<table>
+<table class="palavrasnv2">
+	{#each palavras as linha, i}
 		<tr>
-			<td class="palavras">CATÁR</td>
-			<td class="palavras">ÍNDIA</td>
+			{#each linha as celula, j}
+				<td >{palavras[i][j]}</td>
+			{/each}
 		</tr>
-		<tr>
-			<td class="palavras">ISRAEL</td>
-		</tr>
-	</table>
-	<p class="tema">NACIONALIDADES</p>
-	<table>
-		<tr>
-			<td class="palavras">CAZAQUE</td>
-			<td class="palavras">NIGERIANO</td>
-		</tr>
-		<tr>
-			<td class="palavras">ITALIANO</td>
-			<td class="palavras">QUENIANO</td>
-		</tr>
-	</table>
-	<p class="tema">INVENÇÕES</p>
-	<table>
-		<tr>
-			<td class="palavras">COMPUTADOR</td>
-			<td class="palavras">PAPEL</td>
-		</tr>
-		<tr>
-			<td class="palavras">CÂMERA</td>
-			<td class="palavras">TELEFONE</td>
-		</tr>
-	</table>
-</div>
+	{/each}
+</table>
 
-<table class="menupalavra" id="nivel2">
-	<tr>
-		<td class="cell" >O</td>
-		<td class="cell">T</td>
-		<td class="cell">E</td>
-		<td class="cell">L</td>
-		<td class="cell">E</td>
-		<td class="cell">F</td>
-		<td class="cell">O</td>
-		<td class="cell">N</td>
-		<td class="cell">E</td>
-		<td class="cell">V</td>
-	</tr>
-	<tr>
-		<td class="cell">C</td>
-		<td class="cell">A</td>
-		<td class="cell">Z</td>
-		<td class="cell">A</td>
-		<td class="cell">Q</td>
-		<td class="cell">U</td>
-		<td class="cell">E</td>
-		<td class="cell">A</td>
-		<td class="cell">A</td>
-		<td class="cell">R</td>
-	</tr>
-	<tr>
-		<td class="cell">U</td>
-		<td class="cell">I</td>
-		<td class="cell">S</td>
-		<td class="cell">R</td>
-		<td class="cell">A</td>
-		<td class="cell">E</td>
-		<td class="cell">L</td>
-		<td class="cell">C</td>
-		<td class="cell">E</td>
-		<td class="cell">S</td>
-	</tr>
-	<tr>
-		<td class="cell">D</td>
-		<td class="cell">E</td>
-		<td class="cell">I</td>
-		<td class="cell">T</td>
-		<td class="cell">A</td>
-		<td class="cell">L</td>
-		<td class="cell">I</td>
-		<td class="cell">A</td>
-		<td class="cell">N</td>
-		<td class="cell">O</td>
-	</tr>
-	<tr>
-		<td class="cell">P</td>
-		<td class="cell">A</td>
-		<td class="cell">P</td>
-		<td class="cell">E</td>
-		<td class="cell">L</td>
-		<td class="cell">A</td>
-		<td class="cell">E</td>
-		<td class="cell">T</td>
-		<td class="cell">I</td>
-		<td class="cell">E</td>
-	</tr><tr>
-		<td class="cell">O</td>
-		<td class="cell">A</td>
-		<td class="cell">R</td>
-		<td class="cell">Í</td>
-		<td class="cell">N</td>
-		<td class="cell">D</td>
-		<td class="cell">I</td>
-		<td class="cell">A</td>
-		<td class="cell">E</td>
-		<td class="cell">S</td>
-	</tr><tr>
-		<td class="cell">A</td>
-		<td class="cell">R</td>
-		<td class="cell">A</td>
-		<td class="cell">C</td>
-		<td class="cell">Â</td>
-		<td class="cell">M</td>
-		<td class="cell">E</td>
-		<td class="cell">R</td>
-		<td class="cell">A</td>
-		<td class="cell">I</td>
-	</tr><tr>
-		<td class="cell">R</td>
-		<td class="cell">Q</td>
-		<td class="cell">U</td>
-		<td class="cell">E</td>
-		<td class="cell">N</td>
-		<td class="cell">I</td>
-		<td class="cell">A</td>
-		<td class="cell">N</td>
-		<td class="cell">O</td>
-		<td class="cell">E</td>
-	</tr><tr>
-		<td class="cell">A</td>
-		<td class="cell">N</td>
-		<td class="cell">I</td>
-		<td class="cell">G</td>
-		<td class="cell">E</td>
-		<td class="cell">R</td>
-		<td class="cell">I</td>
-		<td class="cell">A</td>
-		<td class="cell">N</td>
-		<td class="cell">O</td>
-	</tr><tr>
-		<td class="cell">C</td>
-		<td class="cell">O</td>
-		<td class="cell">M</td>
-		<td class="cell">P</td>
-		<td class="cell">U</td>
-		<td class="cell">T</td>
-		<td class="cell">A</td>
-		<td class="cell">D</td>
-		<td class="cell">O</td>
-		<td class="cell">R</td>
-	</tr>
+<table class="gradeletras" id="nivel2">
+    {#each grade as linha, i}
+        <tr>
+            {#each linha as celula, j}
+				<td class="cell">{grade[i][j]}</td>
+            {/each}
+        </tr>
+    {/each}
 </table>
 
 <br />
 
-<a class="botao" id="botaomenunivel2" href="/">Voltar ao Menu</a>
+<button id="botaoreloadnivel1" on:click={() => reloadPage()}>
+	<img class="home"  src="https://i.pinimg.com/564x/17/b1/f4/17b1f41cc9188146734a6c657f26bd09.jpg" alt="">
+</button> 
+
+
+<a  id="botaomenunivel1" href="/">
+	<img class="home" src="https://i.pinimg.com/564x/77/eb/49/77eb49298ec7ee7107ca0d8cb98a507e.jpg" alt="">
+</a>
+

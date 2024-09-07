@@ -1,7 +1,9 @@
 
-table.menupalavra {
-    margin-left: auto;
-    margin-right: auto;
+table.gradeletras {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
     border-collapse: collapse;
     cursor: crosshair;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
@@ -43,4 +45,31 @@ td.cell {
 #nivel3 {
     height: 500px;
     width: 500px;
+}
+
+.palavrasnv1 {
+    text-align: start;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 36%;
+	left: 65%;
+    color: aliceblue;
+}
+
+.palavrasnv2 {
+    text-align: start;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 36%;
+	left: 66%;
+    color: aliceblue;
+}
+
+.palavrasnv3 {
+    text-align: start;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 36%;
+	left: 70%;
+    color: aliceblue;
 }

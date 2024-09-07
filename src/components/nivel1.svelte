@@ -7,6 +7,8 @@
 		window.location.reload();
 	}
 
+	let palavras:string[][] = [["SOL"],["LUA"],["MAR"],["RIO"],["NUVEM"]]
+
 	// função para gerar numero aleatorio entre min e max
 	function geraNumAleatorio(min:number, max:number){
 		min = Math.ceil(min);
@@ -60,24 +62,18 @@
 </script>
 
 <h1>Encontre as Palavras!</h1>
-<div class="menupalavras" id="palavrasnv1">   <!-- cria a grade de palavras a serem encontradas -->
-	<p class="tema">ELEMENTOS DA NATUREZA</p>
-	<table>
-		<tr>
-			<td class="palavras">SOL</td>
-			<td class="palavras">LUA</td>
-		</tr>
-		<tr>
-			<td class="palavras">MAR</td>
-			<td class="palavras">RIO</td>
-		</tr>
-		<tr>
-			<td class="palavras">NUVEM</td>
-		</tr>
-	</table>
-</div>
 
-<table class="menupalavra" id="nivel1">
+<table class="palavrasnv1">
+	{#each palavras as linha, i}
+		<tr>
+			{#each linha as celula, j}
+				<td >{palavras[i][j]}</td>
+			{/each}
+		</tr>
+	{/each}
+</table>
+
+<table class="gradeletras" id="nivel1">
     {#each grade as linha, i}
         <tr>
             {#each linha as celula, j}
@@ -87,7 +83,12 @@
     {/each}
 </table>
 <br>
-<button on:click={() => reloadPage()}>EMBARALHAR</button> 
+
+<button id="botaoreloadnivel1" on:click={() => reloadPage()}>
+	<img class="home"  src="https://i.pinimg.com/564x/17/b1/f4/17b1f41cc9188146734a6c657f26bd09.jpg" alt="">
+</button> 
 
 
-<a class="botao" id="botaomenunivel1" href="/">Voltar ao Menu</a>
+<a  id="botaomenunivel1" href="/">
+	<img class="home" src="https://i.pinimg.com/564x/77/eb/49/77eb49298ec7ee7107ca0d8cb98a507e.jpg" alt="">
+</a>
