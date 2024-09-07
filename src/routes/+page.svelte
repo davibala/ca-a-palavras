@@ -6,9 +6,12 @@
 	CAÇA PALAVRAS!
 </h1>
 
-<br />
-<a class="botao" href="/jogar">Jogar</a>
-<br />
-<a class="botao" href="/Como jogar">Como jogar</a>
-<br />
-<a class="botao" href="/sobre">Sobre</a>
+<a href="/jogar" class="botao">
+ Jogar
+</a>
+ <a href="/Como jogar" class="botao">
+ Como Jogar
+</a>
+ <a href="/sobre" class="botao">
+ Sobre
+</a>
