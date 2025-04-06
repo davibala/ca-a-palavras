@@ -1,18 +1,16 @@
 <script>
     import "../../styles/global.css"
+    import "../../styles/sobre.css"
   </script>
   
   <h1>Sobre</h1>
   
-  <img class="sobre" src="/images/logoIFPE.png" alt="logo IPFE"/>
-  <br>
-  <p class="a">
-      Autores: <br> David Santos <br> David Luan <br> Kauan José <br> Wesllan Kawan <br>  Matheus Gomes
-  </p>
-  <p class="a">
-    <a href="https://youtu.be/zGkK7tywYiA?si=nxRgYgXywq9QoSQq" target="_blank">
-      <button>extra</button>
-    </a>
-  </p>
+  <div class="img-container">
+    <img class="logoIfpe" src="/images/logoIFPE.png" alt="logo IPFE"/>
+  </div>
   
-  <a class="botao" href="/">Voltar ao Menu</a>
+  <p class="autores">Autores: <br><br> David Santos <br> David Luan <br> Kauan José <br> Wesllan Kawan <br>  Matheus Gomes</p>
+  
+  <div class="img-container">
+    <a class="botao" id="botaoSobre" href="/">Voltar ao Menu</a>
+  </div>

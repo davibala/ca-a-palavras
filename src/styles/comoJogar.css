@@ -1,0 +1,31 @@
+.imgComoJogar {
+	max-width: 10%;
+	max-height: 10%;
+    user-select: none;
+}
+
+#tituloComoJogar {
+    font-size: 55px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instrucoes {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 25px;
+    text-align: start;
+}
+
+.instrucoesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin: 5% 0 5% 0;
+}

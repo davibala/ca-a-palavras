@@ -1,0 +1,86 @@
+#tituloNivel1 {
+    font-size: 55px;
+}
+
+.flex-grade-palavras {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+.gradeLetras {
+    height: 330px;
+    width: 330px;
+    border-collapse: collapse;
+    cursor: crosshair;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 24px;
+}
+
+.celula {
+    width: 50px;
+    height: 50px;
+    backdrop-filter: blur(1px);
+    font-family: system-ui;
+    color: rgb(240, 255, 244);
+    user-select: none;
+    border: 2px solid white;
+}
+
+.celula:hover {
+	transform: translateY(-2px);
+}
+
+.palavrasFicha {
+    color: #fff;
+}
+
+.palavrasFicha h3 {
+    font-size: 22px;
+    color: white;
+}
+
+.palavrasFicha ul {
+    list-style-type: none;
+}
+
+.palavrasFicha li {
+    font-size: 18px;
+    text-align: start;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.flex-botoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.btnRecarregar{
+    background: none;
+    border: none;
+}
+
+.imagem {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.2s;
+}
+
+.imagem:hover {
+    transform: translateY(-2px);
+}
+
+.imagem:active {
+    transform: translateY(2px);
+}
+
+.btnVoltar {
+    background: none;
+    border: none;
+}
